@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fe4f4f, #00c6fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.6s ease;
+}
+
+.weather-box {
+  width: 340px;
+  background: linear-gradient(135deg, #9df0ff, #fffd6a);
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ffffff;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #4facfe;
+}
+
+.input-group button {
+  width: 60px;
+  border: none;
+  background: #ffc400;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  transition: 0.3s;
+}
+
+.input-group button:hover {
+  background: #2b8cff;
+  transform: scale(1.05);
+}
+.card {
+  text-align: center;
+  padding-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+}
+
+.card h2 {
+  color: #000000;
+  margin: 10px 0;
+}
+
+.card h1 {
+  color: #000000;
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.card h3 {
+  color: #666;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.details {
+  text-align: left;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.details p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #000000;
+}
+
+.loading {
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .weather-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .card h1 {
+    font-size: 36px;
+  }
+
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .details p {
+    font-size: 15px;
+  }
+}

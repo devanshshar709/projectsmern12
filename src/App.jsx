@@ -8,7 +8,7 @@ function App() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const apiKey = "57c2edfe147cde708bc367419bb1dc5b";
+  const apiKey = "2ab57ab395107879708af8a4eaa7dcef";
 
   const getWeather = async () => {
     if (city.trim() === "") {
